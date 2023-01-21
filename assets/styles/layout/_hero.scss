@@ -1,0 +1,48 @@
+.welcome__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 68vh;
+    padding: 0 30px;
+
+    h3 {
+        font-family: $font1;
+        font-weight: 200;
+        font-size: calc(32px + 6 * ((100vw - 320px) / 320));
+        color: $color1;
+    }
+
+    h1 {
+        margin-top: -40px;
+        font-family: $font2;
+        font-size: calc(32px + 8 * ((100vw - 320px) / 320));
+        color: rgb(255, 255, 255);
+        letter-spacing: 8px;
+        margin-bottom: 30px;
+        text-align: center;
+
+        @media screen and (max-width: 1690px) {
+            margin-top: -30px;
+        }
+        @media screen and (max-width: 1190px) {
+            margin-top: -20px;
+        }
+        @media screen and (max-width: 790px) {
+            margin-top: -10px;
+        }
+    }
+
+    p {
+        margin-top: 60px;
+        font-family: $font3;
+        font-size: calc(14px + 2 * ((100vw - 320px) / 1400));
+        color: rgb(218, 218, 218);
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        text-align: center;
+        max-width: 85%;
+        font-weight: 400;
+    }
+}

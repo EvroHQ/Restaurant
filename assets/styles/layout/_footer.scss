@@ -1,0 +1,103 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 250px;
+    background: url('/assets/img/bg-footer.jpg') center / cover;
+    align-items: center;
+    padding: 30px;
+
+    @media screen and (max-width: 920px) {
+        background: transparent;
+    }
+
+    .footer__container {
+        display: flex;
+        max-width: 1400px;
+        margin: 0 auto;
+
+        @media screen and (max-width: 920px) {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    .left__content {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        h3 {
+            font-family: $font1;
+            font-size: 2.5rem;
+            color: $color1;
+        }
+
+        p {
+            font-family: $font3;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+            color: rgb(231, 231, 231);
+            text-align: left;
+            font-weight: 100;
+            line-height: 1.5rem;
+            margin-top: 10px;
+            width: 90%;
+        }
+
+        @media screen and (max-width: 920px) {
+            display: none;
+        }
+    }
+
+    .right__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 80px;
+
+        @media screen and (max-width: 920px) {
+            margin-left: 0;
+            width: 60%;
+        }
+
+        @media screen and (max-width: 620px) {
+            margin-left: 0;
+            width: 90%;
+        }
+
+        h2 {
+            font-family: $font3;
+            text-transform: uppercase;
+            font-size: 1rem;
+            color: rgb(235, 235, 235);
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid rgb(71, 71, 71);
+            background: transparent;
+            margin-bottom: 40px;
+            transition: .3s all ease;
+            color: rgb(160, 160, 160);
+        }
+    }
+}
+
+.footer__social {
+    display: flex;
+    gap: 30px;
+    color: rgb(71, 71, 71);
+
+    i {
+        cursor: pointer;
+        transition: .4s all ease;
+
+        &:hover {
+            color: rgb(160, 160, 160);
+            transform: translateY(-4px);
+        }
+    }
+}

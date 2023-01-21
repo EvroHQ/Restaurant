@@ -1,0 +1,89 @@
+.section4 {
+    padding: 0 30px;
+}
+
+.section4__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1500px;
+    background-color: #fff;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 30px;
+
+    .section4__content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 30px;
+        align-items: center;
+
+        p {
+            font-family: $font3;
+            font-weight: 400;
+            font-size: 1.2rem;
+            color: rgb(32, 32, 32);
+            text-align: center;
+            margin-top: 20px;
+            padding: 30px;
+            letter-spacing: 0.2px;
+            line-height: 2rem;
+            margin-bottom: 30px;
+
+            &::before {
+                content: "❝ ";
+                width: 10px;
+                height: 10px;
+                position: relative;
+                font-size: 2rem;
+            }
+
+            &::after {
+                content: " ❞";
+                width: 10px;
+                height: 10px;
+                position: relative;
+                font-size: 2rem;
+            }
+        }
+
+        h1 {
+            font-family: $font3;
+            font-weight: 600;
+            font-size: 1.4rem;
+            color: rgb(32, 32, 32);
+            text-align: center;
+            letter-spacing: 0.2px;
+            margin-top: 20px;
+        }
+
+        h4 {
+            font-family: $font3;
+            font-weight: 200;
+            font-size: 18px;
+            color: rgb(190, 144, 90);
+            text-align: center;
+            margin: 20px;
+        }
+
+        img {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            width: 60px;
+            height: 60px;
+            margin-top: -70px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.gmap__container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background:  url('/assets/img/gmap.jpg') center / cover;
+    margin-top: -150px;
+}

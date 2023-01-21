@@ -1,0 +1,99 @@
+.fullwidth__container {
+    display: flex;
+    height: auto;
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+    min-height: 440px;
+    max-height: 600px;
+
+    @media screen and (max-width: 920px) {
+        flex-direction: column;
+    }
+
+    .left__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        margin: 15px;
+        text-align: center;
+        border: 1px dashed $color1;
+        padding: 0 30px;
+        align-items: center;
+
+        @media screen and (max-width: 920px) {
+            width: 94%;
+            margin: 20px auto;
+            padding: 30px;
+        }
+    }
+
+    h3 {
+        font-family: $font1;
+        font-weight: 200;
+        font-size: 34px;
+        color: $color1;
+        text-align: center;
+    }
+
+    h2 {
+        font-family: $font2;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: rgb(32, 32, 32);
+        text-align: center;
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-family: $font3;
+        font-size: 16px;
+        color: rgb(32, 32, 32);
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .ic-plate {
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+    }
+
+    .avatar01 {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        border-radius: 50%;
+        margin-top: 20px;
+    }
+
+    .chief__name {
+        font-family: $font2;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: rgb(32, 32, 32);
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .chief__position {
+        font-family: $font3;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 800;
+        color: rgb(151, 151, 151);
+        text-align: center;
+        margin-top: -20px;
+    }
+
+    .right__container {
+        width: 50%;
+        background: url('/assets/img/store-01.jpg') center/cover no-repeat;
+        background-position: bottom;
+
+        @media screen and (max-width: 920px) {
+            display: none;
+        }
+    }
+}
